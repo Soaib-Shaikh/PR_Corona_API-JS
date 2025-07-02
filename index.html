@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Corona API</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="container my-5">
+            <h2 class="text-center mb-4">CORONA Cases in India</h2>
+
+            <div class="row g-4 text-center">
+
+                <div class="col-md-3">
+                    <div class="card p-3 bg-info text-dark">
+                        <div class="case-title">Total Cases</div>
+                        <div id="total" class="case-number">0</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card p-3 bg-warning text-white">
+                        <div class="case-title">Active Cases</div>
+                        <div id="active" class="case-number">0</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card p-3 bg-success text-white">
+                        <div class="case-title">Recovered</div>
+                        <div id="recovered" class="case-number">0</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card p-3 bg-danger text-white">
+                        <div class="case-title">Deaths</div>
+                        <div id="deaths" class="case-number">0</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row ">
+                <div class="col-12 ">
+                    <div class="col-6 mx-auto">
+                        <select id="stateSelect" class="form-select mb-3">
+                        <option value="">-- Select State --</option>
+                    </select>
+                    </div>
+
+                    <div id="selectedStateData" class="d-none border p-3 rounded bg-light text-center mx-auto">
+                        <h5 id="stateName" class="mb-3"></h5>
+                        <p><strong>Total Cases:</strong> <span id="sTotal"></span></p>
+                        <p><strong>Active Cases:</strong> <span id="sActive"></span></p>
+                        <p><strong>Recovered:</strong> <span id="sRecovered"></span></p>
+                        <p><strong>Deaths:</strong> <span id="sDeaths"></span></p>
+                    </div>
+
+                    <table id="myTable" class="table table-bordered caption-top">
+                        <caption><h2 class="text-center">Corana Cases In India State Vise</h2></caption>
+                        <thead class="table-dark">
+                            <tr>
+                                <th>State/UT</th>
+                                <th>Total</th>
+                                <th>Active</th>
+                                <th>Recovered</th>
+                                <th>Deaths</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- JavaScript Link -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
