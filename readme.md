@@ -1,6 +1,6 @@
 <-----  CORONA API  ----->
 
-Link here:-
+Link here:- https://pr-corona-api-js.vercel.app/
 
 Output:-
 1. Corona Cases
