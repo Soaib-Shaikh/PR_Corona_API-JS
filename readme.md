@@ -2,6 +2,15 @@
 
 Link here:-
 
+Output:-
+1. Corona Cases
+
+![alt text](./output/1.png)
+
+2. Perticulary State
+
+![alt text](./output/2.png)
+
 ## Description
 This project is a simple web application that uses a public Corona (COVID-19) API to fetch and display real-time COVID-19 statistics. It provides users with up-to-date information about cases, recoveries, and deaths.
 
